@@ -1,1 +1,164 @@
-body{margin:0;background:#09030C;color:white;font-family:"Inter",sans-serif;overflow-x:hidden}h1{font-size:5rem;text-align:center}h2{font-size:2.5rem;text-align:center}p{font-size:1.5rem;max-width:700px;line-height:1.6;text-align:center}#loader{position:fixed;height:100vh;width:100%;background:#09030C;display:flex;flex-direction:column;justify-content:center;align-items:center;z-index:10}#loader .loading-bar{width:300px;height:6px;background:#222;margin:30px 0}#loader .loading-bar .progress{height:100%;width:0;background:#c776f9;animation:load 3s forwards}@keyframes load{to{width:100%}}.slide{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px;opacity:0;transform:translateY(40px);transition:all .8s;background:#09030C;background:linear-gradient(90deg, #09030c 0%, #201647 85%, #421e63 100%)}.slide .terminal{background:#c776f9;border-radius:10px;padding:25px;margin:30px 0;font-family:"JetBrains Mono",monospace;color:#421e63;min-width:500px;max-width:700px;box-shadow:0 0 20px rgba(0,0,0,0.4);text-align:left;padding:30px 60px;font-weight:500;line-height:1.7}.slide .countdown{font-size:5rem;margin-top:20px}.image-placeholder{width:610px;height:280px;border:2px dashed #c776f9;border-radius:12px;margin:40px 0;display:flex;flex-direction:column;align-items:center;justify-content:center}.image-placeholder i{font-size:40px;margin-bottom:10px;color:#c776f9}.image-placeholder span{font-family:"JetBrains Mono",monospace;font-size:.9rem;opacity:.7}.reveal{background:#c776f9;color:black}.reveal h1{font-size:7rem;letter-spacing:5px}.reveal .countdown{font-size:7rem;font-weight:600}
+body {
+  margin: 0;
+  background: #09030C;
+  color: white;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 5.5rem;
+  text-align: center;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+p {
+  font-size: 2.4rem;
+  max-width: 700px;
+  line-height: 1.6;
+  text-align: center;
+}
+p .tag {
+  font-weight: 700;
+  padding: 0 4px;
+  color: #09030C;
+}
+p .tag.green {
+  background-color: greenyellow;
+}
+p .tag.red {
+  background-color: coral;
+}
+p .tag.yellow {
+  background-color: yellow;
+}
+ul.check {
+  list-style-type: "✓ ";
+}
+#loader {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: #09030C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+#loader .loading-bar {
+  width: 300px;
+  height: 6px;
+  background: #222;
+  margin: 30px 0;
+}
+#loader .loading-bar .progress {
+  height: 100%;
+  width: 0;
+  background: #c776f9;
+  animation: load 3s forwards;
+}
+@keyframes load {
+  to {
+    width: 100%;
+  }
+}
+.slide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  transition: all 0.8s;
+  background: linear-gradient(90deg, #09030c 0%, #201647 85%, #421e63 100%);
+}
+.slide .terminal {
+  background: #c776f9;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 60px 0;
+  font-family: "JetBrains Mono", monospace;
+  color: #421e63;
+  min-width: 630px;
+  max-width: 680px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  padding: 30px 60px;
+  padding-bottom: 60px;
+  font-weight: 600;
+  line-height: 1.7;
+  font-size: 1.8rem;
+}
+.slide .terminal .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.slide .terminal .header p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.slide .terminal.red {
+  background-color: coral;
+  color: brown;
+}
+.slide .terminal.green {
+  background-color: greenyellow;
+  color: darkgreen;
+}
+.slide .terminal.gray {
+  background-color: lightgray;
+  color: #09030C;
+}
+.slide.dark {
+  background: #09030C;
+  height: 100vh;
+}
+.slide.dark h1 {
+  font-size: 5rem;
+  margin-bottom: 60px;
+}
+.image-placeholder {
+  width: 750px;
+  height: auto;
+  border: 2px dashed #c776f9;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4/3;
+}
+.image-placeholder img {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #c776f9;
+  width: 750px;
+  height: auto;
+}
+.image-placeholder span {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.8rem;
+  opacity: 0.7;
+}
+.reveal {
+  background: #c776f9;
+  color: black;
+}
+.reveal h1 {
+  font-size: 6rem;
+  letter-spacing: 5px;
+}
+.reveal .countdown {
+  font-size: 7rem;
+  font-weight: 600;
+}
