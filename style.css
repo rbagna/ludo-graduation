@@ -107,6 +107,17 @@ ul.check {
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
+.slide .terminal .header .copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.slide .terminal .header .copy-btn .terminal-icon {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+  transition: transform 0.2s;
+}
 .slide .terminal.red {
   background-color: coral;
   color: brown;
@@ -125,10 +136,15 @@ ul.check {
 }
 .slide.dark h1 {
   font-size: 5rem;
-  margin-bottom: 60px;
+  margin-top: 200px;
+}
+.slide.dark .hearts {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0 200px 0;
 }
 .image-placeholder {
-  width: 750px;
+  width: 740px;
   height: auto;
   border: 2px dashed #c776f9;
   margin-top: 40px;
@@ -139,10 +155,7 @@ ul.check {
   aspect-ratio: 4/3;
 }
 .image-placeholder img {
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: #c776f9;
-  width: 750px;
+  width: 740px;
   height: auto;
 }
 .image-placeholder span {
@@ -152,13 +165,120 @@ ul.check {
 }
 .reveal {
   background: #c776f9;
-  color: black;
+  color: #09030C;
 }
 .reveal h1 {
   font-size: 6rem;
   letter-spacing: 5px;
 }
-.reveal .countdown {
-  font-size: 7rem;
-  font-weight: 600;
+.reveal a {
+  background: #09030C;
+  color: #c776f9;
+  border-radius: 99px;
+  padding: 30px;
+  width: 550px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.reveal a:hover {
+  background: #c776f9;
+  color: #09030C;
+}
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    /* Bagliore più contratto e scuro */
+    text-shadow: 0 0 5px #fff, 0 0 10px #c776f9, 0 0 20px #c776f9, 0 0 30px #09030C, 0 0 40px #09030C;
+  }
+  to {
+    /* Bagliore più espanso e luminoso */
+    text-shadow: 0 0 10px #fff, 0 0 20px #c776f9, 0 0 30px #c776f9, 0 0 50px #c776f9, 0 0 70px #09030C;
+  }
+}
+.firma {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  filter: blur(10px);
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+  color: inherit !important;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+/* Forza l'assenza di sfondo per la classe reveal */
+.reveal:not(.terminal, .slide) {
+  background: transparent !important;
+}
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+    max-width: 800px;
+  }
+  .slide .terminal {
+    min-width: 500px;
+    max-width: 750px;
+    line-height: 1.4;
+    font-size: 0.8rem;
+    padding: 20px 40px;
+    margin: 30px 0;
+  }
+  .slide .terminal .header {
+    margin-bottom: 0px;
+  }
+  .slide .terminal .header p {
+    font-size: 0.8rem;
+  }
+  .slide .terminal .header .copy-btn .terminal-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .slide.dark h1 {
+    font-size: 4rem;
+    margin-top: 100px;
+  }
+  .slide.dark .hearts {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0 100px 0;
+  }
+  .image-placeholder {
+    width: 550px;
+    height: auto;
+    margin-top: 20px;
+  }
+  .image-placeholder img {
+    width: 550px;
+    height: auto;
+  }
+  .image-placeholder span {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1rem;
+    opacity: 0.7;
+  }
 }
