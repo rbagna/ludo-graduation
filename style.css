@@ -225,7 +225,7 @@ ul.check {
 .reveal:not(.terminal, .slide) {
   background: transparent !important;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1206px) {
   h1 {
     font-size: 3rem;
   }
