@@ -40,7 +40,7 @@
 
         <section class="slide">
             <h2>System Validation Protocol</h2>
-            <p>Dopo anni di sviluppo, debugging e simulazioni, il plugin MetaHuman Auto-Fitting ha raggiunto la fase finale della pipeline.</p>
+            <p>Dopo mesi di sviluppo, debugging e simulazioni, il plugin MetaHuman Auto-Fitting ha raggiunto la fase finale della pipeline.</p>
             <p>Il soggetto di test ha completato con successo tutti i prerequisiti richiesti dal sistema.</p>
             <ludoz-terminal>
                 Validation requirements detected:
@@ -54,19 +54,16 @@
         </section>
 
         <section class="slide">
-            <h2>Frame 01 — Mesh Import</h2>
+            <h2>Phase 01 — Staging</h2>
             <div class="image-placeholder">
-                <img src="render-1.png" alt="Mesh Import" width="500" height="600">
+                <img src="render-1_v2.png" alt="Mesh Import" width="500" height="600">
             </div>
             <ludoz-terminal>
-                Importing Body Mesh: Ludoz <br>
-                Skeleton: Human_Rig_v3 <br>
-                Pose: A-Pose <br>
-                Calibration: Complete
+                Input: Subject_Ludoz_Final_v03.uasset <br>
+                Operation: Fit-Once Manual Positioning <br>
+                Status: User-aligned to "Polito_Academic_Grid"
             </ludoz-terminal>
             <p>
-                Il soggetto viene caricato nel sistema con configurazione standard. <br>
-                -------------------------------------- <br>
                 Parameters detected: <br>
                 Technical curiosity: <span class="tag green"> HIGH </span> <br>
                 Sleep hours: <span class="tag red"> LOW </span> <br>
@@ -75,31 +72,41 @@
         </section>
 
         <section class="slide">
-            <h2>Frame 02 — Accessory Fitting</h2>
-            <div class="image-placeholder">
-                <img src="render-2.png" alt="Accessory Fitting" width="500" height="600">
-            </div>
+            <h2>Phase 02 — Discovering & Classifying</h2>
             <ludoz-terminal>
-                Loading Asset: Laurel_Wreath_v02 <br>
-                Socket: Head <br>
-                Status: Fitting... <br>
-                Laurea_Status = COMPLETE
+                Scanning contact manifolds... <br>
+                Detected contact points: [Thesis_Draft, Late_Night_Render, Final_Exam] <br>
+                Assigning CategoryID: "Cinema_Engineer_Class_2026" <br>
+                Status: Manifolds validated.
             </ludoz-terminal>
-            <p>Degree successfully unlocked.</p>
+            <p>Il sistema ha rilevato una corrispondenza perfetta tra i prerequisiti accademici e il soggetto. <br> Il CategoryID è ora bloccato.</p>
         </section>
 
         <section class="slide">
-            <h2>Frame 03 — Physics Constraint</h2>
+            <h2>Phase 03 — Baking</h2>
             <div class="image-placeholder">
-                <img src="render-3.png" alt="Physics Constraint" width="500" height="600">
+                <img src="render-2_v2.png" alt="Accessory Fitting" width="500" height="600">
             </div>
             <ludoz-terminal>
-                Loading Asset: Bungee_Harness_v01 <br>
-                Attachment: Torso <br>
-                Safety Harness: LOCKED <br>
-                Elastic Simulation: ACTIVE
+                Generating Payload: Laurel_Wreath_Data_v02 <br>
+                Writing metadata to Target... <br>
+                Target: Physical_World_Interface <br>
+                Baking Status: 100% (No artifacts detected)
             </ludoz-terminal>
-            <p>Per garantire l'integrità del soggetto durante la simulazione viene installato un sistema di aggancio e supporto toracico ad alta resistenza.</p>
+            <p>Degree successfully unlocked. Payload pronto per il trasferimento.</p>
+        </section>
+
+        <section class="slide">
+            <h2>Phase 04 — Solving</h2>
+            <div class="image-placeholder">
+                <img src="render-3_v2.png" alt="Physics Constraint" width="500" height="600">
+            </div>
+            <ludoz-terminal>
+                Calculating Transformation to Target... <br>
+                Constraint: Bungee_Harness_v01 <br>
+                Status: READY TO SIMULATE
+            </ludoz-terminal>
+            <p>Calcolo della trasformazione cinematica completato. Il sistema è pronto per il drop test.</p>
         </section>
 
         <section class="slide">
